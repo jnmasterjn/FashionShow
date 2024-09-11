@@ -45,7 +45,7 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    background-image: url('example.jpg'); /* Replace with actual hero image */
+    background-image: url('/photos/group.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -152,6 +152,7 @@ footer {
     padding: 20px;
     text-align: center;
     font-size: 0.9rem;
+    color: black;
     margin-top: auto; /* Push footer to the bottom */
 }
 
