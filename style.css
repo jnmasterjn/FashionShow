@@ -1,0 +1,292 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f0ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+    background-color: #9b72d1;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #d4c1f3;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url('example.jpg'); /* Replace with actual hero image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #f4b9ff;
+    color: #333;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #f191ff;
+}
+
+/* Highlights Section */
+.highlights {
+    padding: 50px;
+    background-color: #f4f0ff;
+    text-align: center;
+}
+
+.highlights h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.highlight-item {
+    text-align: center;
+}
+
+.highlight-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-item h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #333;
+}
+
+.highlight-item p {
+    margin-top: 10px;
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #9b72d1;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Footer */
+footer {
+    background-color: #d9c8f0;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+/* About Section */
+.about {
+    padding: 50px;
+    text-align: center;
+    background-color: #f4f0ff;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h1, .about h2 {
+    color: #333;
+}
+
+.about p {
+    margin: 20px 0;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 50px;
+    text-align: center;
+    background-color: #f4f0ff;
+}
+
+.gallery h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center; /* Centers grid items */
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.caption {
+    margin-top: 10px;
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-btn {
+        padding: 8px 16px;
+    }
+}
+
+/* Group Photo Section */
+.group-photo {
+    padding: 50px;
+    text-align: center;
+    background-color: #f4f0ff;
+}
+
+.group-photo h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.photo-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.photo-container img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.caption {
+    margin-top: 10px;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Recruitment Section */
+.recruitment {
+    padding: 50px;
+    text-align: center;
+    background-color: #f4f0ff;
+}
+
+.recruitment h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.recruitment p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center; /* Centers the iframe horizontally */
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    max-width: 640px; /* Controls the width of the form */
+    height: 1824px;
+}
+
