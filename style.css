@@ -37,7 +37,7 @@ body {
     color: white;
     font-weight: bold;
 }
-e
+
 .nav-links a:hover {
     color: #d4c1f3;
 }
@@ -45,7 +45,7 @@ e
 /* Hero Section */
 .hero {
     position: relative;
-    background-image: url('/photos/group.png');
+    background-image: url('/photos/cover.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -180,22 +180,14 @@ footer {
 
 /* Gallery Section */
 .gallery {
-    padding: 50px;
+    padding: 15px;
     text-align: center;
-    background-color: #f4f0ff;
-}
-
-.gallery h1 {
-    color: #333;
-    margin-bottom: 30px;
-    font-size: 2rem;
 }
 
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-items: center; /* Centers grid items */
+    gap: 20px; /* Adjust the gap between items */
 }
 
 .gallery-item {
@@ -203,16 +195,18 @@ footer {
 }
 
 .gallery-item img {
-    width: 100%;
-    height: auto;
+    width: 300px; /* Set fixed width */
+    height: 200px; /* Set fixed height */
+    object-fit: cover; /* Ensures the image covers the box without distortion */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; /* Space between image and caption */
 }
 
 .caption {
-    margin-top: 10px;
-    color: #666;
+    margin-top: 5px; /* Reduce space between image and caption */
     font-size: 1rem;
+    color: #666;
 }
 
 /* Responsive Styles */
@@ -291,3 +285,13 @@ iframe {
     height: 1824px;
 }
 
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0; /* Cover the entire hero section */
+    background-image: url('photos/cover.png'); /* Apply background image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px); /* Apply blur effect */
+    z-index: 0;
+}
